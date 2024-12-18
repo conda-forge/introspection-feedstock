@@ -1,6 +1,6 @@
 {% set python_min = python_min|default("0.1a0") %}
 {% set name = "introspection" %}
-{% set version = "1.9.2" %}
+{% set version = "1.9.3" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/introspection-{{ version }}.tar.gz
-  sha256: ca8412212c62c501bad8b43cda62b6e63bf1007af0db4826cb6539c49427e542
+  sha256: 7d8268be5ff93bc05f7d87903814e6cd34ee6c73db182590815cb21c4aa9a0b0
 
 build:
   noarch: python
