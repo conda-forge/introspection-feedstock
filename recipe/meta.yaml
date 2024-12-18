@@ -1,4 +1,3 @@
-{% set python_min = python_min|default("0.1a0") %}
 {% set name = "introspection" %}
 {% set version = "1.9.3" %}
 
@@ -17,7 +16,7 @@ build:
 
 requirements:
   host:
-    - python {{ python_min }}.*
+    - python {{ python_min }}
     - flit-core >=3.2,<4
     - pip
   run:
@@ -34,7 +33,7 @@ test:
     - pip check
   requires:
     - pip
-    - python ={{ python_min }}
+    - python {{ python_min }}
 
 about:
   home: https://github.com/Aran-Fey/introspection
