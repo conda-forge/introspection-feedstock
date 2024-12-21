@@ -24,7 +24,7 @@ requirements:
     - ordered-set
     - renumerate
     - sentinel
-    - typing-extensions
+    - typing_extensions
 
 test:
   imports:
