@@ -1,5 +1,5 @@
 {% set name = "introspection" %}
-{% set version = "1.9.5" %}
+{% set version = "1.9.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/introspection-{{ version }}.tar.gz
-  sha256: 071be8c27e153ab33187e1e57f744cf40451d9776c58c42a966586bfaa0719b9
+  sha256: 9b050ff20f028f5fa841fc2534173552c1b006252ff62320b1ecf71488526002
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - ordered-set
     - renumerate
     - sentinel
-    - typing-extensions
+    - typing_extensions
 
 test:
   imports:
