@@ -1,5 +1,5 @@
 {% set name = "introspection" %}
-{% set version = "1.9.9" %}
+{% set version = "1.9.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/introspection-{{ version }}.tar.gz
-  sha256: 4773e3b9503b2262be1534e1f64cb9df4bcab51c026a515253e1b5c44f34b870
+  sha256: f27a5925e1b64f6cd15699a673865017ac720d63327d5dd729cb6c6ae3053350
 
 build:
   noarch: python
