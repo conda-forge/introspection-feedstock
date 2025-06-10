@@ -22,7 +22,6 @@ requirements:
   run:
     - python >={{ python_min }}
     - ordered-set
-    - renumerate
     - sentinel
     - typing_extensions
 
