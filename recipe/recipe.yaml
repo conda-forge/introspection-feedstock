@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: introspection
-  version: 1.10.2
+  version: "1.11.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/introspection-${{ version }}.tar.gz
-  sha256: e379d79e14d3007af224073e4a97938942bce9f7da11b115df6bf0cda38050be
+  sha256: 9bbabf01df20400ded8cb5385c448eae79c8a1a94a5f7882851bf2e8243bc4d8
 
 build:
   number: 0
