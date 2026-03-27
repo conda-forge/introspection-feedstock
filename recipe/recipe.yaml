@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: introspection
-  version: "1.14.2"
+  version: "1.14.3"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/introspection-${{ version }}.tar.gz
-  sha256: f1524e67a997a47e4c63cd24f9f6a6b5542cd99b8d95e2bbb467d64134be7ce5
+  sha256: a4c36bf0f21568b322b173ae62045c9c3d72f026d99cc62344edacb803d66453
 
 build:
   number: 0
@@ -33,7 +33,9 @@ tests:
       imports:
         - introspection
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: New and improved introspection functions
